@@ -1,0 +1,301 @@
+/* ==========================
+   Root Colors - Light & Dark
+========================== */
+:root{
+    /* Light Mode Colors */
+    --main-color: #fbbf24;     
+    --text-color: #222222;     
+    --bg-color: #fefef6;
+    --light-color: #ffff;
+    --dark-color: #000;
+
+    --bodyFont-one: "Poppins-Regular";
+    --bodyFont-tow: 'Poppins-SemiBold';
+    --headingFont: 'Poppins-SemiBold';
+
+    /* Dark Mode Colors */
+    --dm-bg-color: #121212;
+    --dm-text-color: #e0e0e0;
+    --dm-main-color: #fbbf24;
+    --dm-light-color: #ffffff;
+}
+
+/* ==========================
+   Global Styles
+========================== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+body{
+    font-family: var(--bodyFont-one);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(../fonts/Poppins-SemiBold.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf) format('woff2');
+}
+
+/* ==========================
+   Header & Nav
+========================== */
+header{
+    margin: 20px 7.5%;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header nav b{
+    color: var(--main-color);
+    font-size: 35px;
+    font-family: var(--headingFont);
+    cursor: pointer;
+}
+
+header nav ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ol li{
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header nav ol .active{
+    background-color: var(--main-color);
+}
+
+header nav ol .active a{
+    color: var(--light-color);
+}
+
+header nav ol li:hover{
+    background-color: var(--main-color);
+    letter-spacing: 2px;
+}
+
+header nav ol li:hover a{
+    color: var(--light-color);
+}
+
+header nav ol a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+header nav div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav div .icon{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    cursor: pointer;
+}
+header nav div .icon:hover{
+    transform: scale(1.1);
+}
+header nav div .icon i{
+    font-size: 18px;
+}
+header nav div .icon span{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+header nav div .btn{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--light-color);
+}
+header nav div .btn:hover{
+    background-color: var(--text-color);
+}
+
+/* Buttons */
+.btn{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--light-color);
+    width: max-content;
+    cursor: pointer;
+}
+
+/* ==========================
+   Section One
+========================== */
+.secOne{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.secOne .left{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.secOne .left h1{
+    font-family: var(--headingFont);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.secOne .left h1 span{
+    color: var(--main-color);
+    font-size: 43px;
+}
+
+.secOne .left p{
+    color: #00000093;
+    font-size: 16px;
+}
+
+.secOne .left .social{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.secOne .left .social .btn{
+    border: 2px solid var(--main-color);
+}
+.secOne .left .social .btn:hover{
+    background-color: var(--bg-color);
+}
+.secOne .left .social .btn p{
+    color: var(--light-color);
+}
+.secOne .left .social .btn:hover p{
+    color: var(--text-color);
+}
+
+.secOne .left .social .s-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secOne .left .social .s-icon div{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+.secOne .left .social .s-icon div:hover{
+    background-color: var(--text-color);
+    color: var(--main-color);
+    transform: translateY(-8px);
+}
+
+.secOne .right div{
+    width: 100%;
+}
+.secOne .right div img{
+    width: 100%;
+}
+
+/* ==========================
+   Section Titles
+========================== */
+.secTit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.secTit span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.secTit b{
+    font-size: 30px;
+    font-family: var(--headingFont);
+}
+
+/* ==========================
+   Dark Mode Toggle
+========================== */
+body.dark-mode{
+    background-color: var(--dm-bg-color);
+    color: var(--dm-text-color);
+}
+
+body.dark-mode header nav{
+    background-color: var(--dm-bg-color);
+    color: var(--dm-text-color);
+}
+
+body.dark-mode .secOne .left .social .s-icon div{
+    background-color: #333;
+}
+
+body.dark-mode .btn,
+body.dark-mode header nav div .btn{
+    background-color: var(--dm-main-color);
+    color: var(--dm-light-color);
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode header nav div .btn:hover{
+    background-color: var(--text-color);
+    color: var(--dm-light-color);
+}
+
+body.dark-mode footer,
+body.dark-mode .footer{
+    background-color: #1a1a1a;
+    color: var(--dm-text-color);
+}
