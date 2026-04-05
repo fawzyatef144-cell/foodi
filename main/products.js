@@ -163,7 +163,7 @@ function succsesAddToCartBox(pro){
         let closeBox = document.createElement('button')
             closeBox.innerHTML = 'Close'
         let openBox = document.createElement('button')
-            openBox.innerHTML = 'Cart Cart'
+            openBox.innerHTML = 'Open Cart'
         
             div.append(closeBox)
             div.append(openBox)
